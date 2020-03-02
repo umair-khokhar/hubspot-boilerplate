@@ -70,7 +70,7 @@ Run `yarn install` in the project root.
 defaultPortal: 'DEV'
 portals:
   - name: 'DEV'
-    portalId: 6223912
+    portalId: *******
     authType: oauth2
 ...
 
@@ -96,7 +96,7 @@ To get started with HubSpot development you'll need some commands. These command
 First things first, you'll need to clone the repository like so:
 
 ```sh
-git clone git@bitbucket.org:bureau_bright/hubspot-boilerplate.git your-project/
+git clone https://github.com/teunrutten/hubspot-boilerplate.git your-project
 ```
 
 Change the project name inside the `gulpconfig.js`.
@@ -429,13 +429,13 @@ The response will look something like this:
   "limit": 9,
   "results": [
     {
-      "id": 4913381610,
+      "id": 123456789,
       "score": 0.017206732,
       "type": "SITE_PAGE",
       "domain": "www.example.com",
       "url": "https://www.example.com/lorem",
       "language": "nl-nl",
-      "title": "Wat is een content management systeem (CMS) | Bureau Bright",
+      "title": "Example post title",
       "description": "Lorem ipsum <span class=\"hs-search-highlight hs-highlight-html\">dolor</span> iset amet."
     },
     {

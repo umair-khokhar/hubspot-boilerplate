@@ -1,5 +1,5 @@
 {
-  "name": "@bureaubright/hubspot-boilerplate",
+  "name": "teunrutten/hubspot-boilerplate",
   "version": "0.0.1",
   "description": "Local Hubspot development",
   "main": "index.js",

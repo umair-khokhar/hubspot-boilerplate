@@ -63,7 +63,7 @@ function buildIcons() {
 }
 
 function cleanIcons() {
-  return del(['src/modules/kopexpo_icons.module/module.html']);
+  return del(['src/modules/example_icons.module/module.html']);
 }
 
 function copyIcons() {
@@ -118,7 +118,7 @@ const BuildIcons = series(buildIcons, cleanIcons, copyIcons);
 
 const GenerateFields = series(buildModuleFields);
 const Watch = function() {
-  watch(['src/icons/*.svg'], BuildIcons);
+  // watch(['src/icons/*.svg'], BuildIcons); This causes a infinite loop. Fix later.
   watch(['src/modules/**/fields/fields.js'], GenerateFields);
   watch(['src/**/*.scss', 'src/**/*.html', 'src/**/*.js', '!src/modules/**/fields/fields.js'], Build);
 };

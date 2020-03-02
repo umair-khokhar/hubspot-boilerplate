@@ -81,7 +81,6 @@
     "object-fit-images": "^3.2.4",
     "objectFitPolyfill": "^2.3.0",
     "preact": "^10.1.1",
-    "raven-js": "^3.27.2",
     "smoothscroll": "^0.4.0"
   }
 }

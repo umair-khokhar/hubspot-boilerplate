@@ -1,0 +1,14 @@
+.u-bg-color {
+  &--none {
+    background-color: transparent;
+  }
+  &--white {
+    background-color: $white;
+  }
+  &--gray {
+    background-color: $gray;
+  }
+  &--black {
+    background-color: $black;
+  }
+}

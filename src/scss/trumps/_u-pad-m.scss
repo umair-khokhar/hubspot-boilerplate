@@ -1,0 +1,161 @@
+// scss-lint:disable ImportantRule
+
+.u-pad-m {
+  &--none {
+    @include breakpoint(small only) {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+  &--top-none {
+    @include breakpoint(small only) {
+      padding-top: 0 !important;
+    }
+  }
+  &--bot-none {
+    @include breakpoint(small only) {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  /**
+  * Padding xxxlarge
+  */
+  &--xxxxl {
+    @include breakpoint(small only) {
+      padding-top: 8.5rem !important;
+      padding-bottom: 8.5rem !important;
+    }
+  }
+  &--top-xxxxl {
+    @include breakpoint(small only) {
+      padding-top: 8.5rem !important;
+    }
+  }
+  &--bot-xxxxl {
+    @include breakpoint(small only) {
+      padding-bottom: 8.5rem !important;
+    }
+  }
+
+  /**
+  * Padding xxxlarge
+  */
+  &--xxxl {
+    @include breakpoint(small only) {
+      padding-top: 6.5rem !important;
+      padding-bottom: 6.5rem !important;
+    }
+  }
+  &--top-xxxl {
+    @include breakpoint(small only) {
+      padding-top: 6.5rem !important;
+    }
+  }
+  &--bot-xxxl {
+    @include breakpoint(small only) {
+      padding-bottom: 6.5rem !important;
+    }
+  }
+
+  /**
+  * Padding xxlarge
+  */
+  &--xxl {
+    @include breakpoint(small only) {
+      padding-top: 5.5rem !important;
+      padding-bottom: 5.5rem !important;
+    }
+  }
+  &--top-xxl {
+    @include breakpoint(small only) {
+      padding-top: 5.5rem !important;
+    }
+  }
+  &--bot-xxl {
+    @include breakpoint(small only) {
+      padding-bottom: 5.5rem !important;
+    }
+  }
+
+  /**
+  * Padding xlarge
+  */
+  &--xl {
+    @include breakpoint(small only) {
+      padding-top: 3.5rem !important;
+      padding-bottom: 3.5rem !important;
+    }
+  }
+  &--top-xl {
+    @include breakpoint(small only) {
+      padding-top: 3.5rem !important;
+    }
+  }
+  &--bot-xl {
+    @include breakpoint(small only) {
+      padding-bottom: 3.5rem !important;
+    }
+  }
+
+  /**
+  * Padding large
+  */
+  &--l {
+    @include breakpoint(small only) {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+  }
+  &--top-l {
+    @include breakpoint(small only) {
+      padding-top: 2rem !important;
+    }
+  }
+  &--bot-l {
+    @include breakpoint(small only) {
+      padding-bottom: 2rem !important;
+    }
+  }
+
+  /**
+   * Padding medium
+   */
+  &--m {
+    @include breakpoint(small only) {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+  }
+  &--top-m {
+    @include breakpoint(small only) {
+      padding-top: 1rem !important;
+    }
+  }
+  &--bot-m {
+    @include breakpoint(small only) {
+      padding-bottom: 1rem !important;
+    }
+  }
+
+  /**
+   * Padding small
+   */
+  &--s {
+    @include breakpoint(small only) {
+      padding-top: .5rem !important;
+      padding-bottom: .5rem !important;
+    }
+  }
+  &--top-s {
+    @include breakpoint(small only) {
+      padding-top: .5rem !important;
+    }
+  }
+
+  &--bot-s {
+    @include breakpoint(small only) {
+      padding-bottom: .5rem !important;
+    }
+  }
+}

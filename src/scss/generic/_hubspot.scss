@@ -1,0 +1,16 @@
+/*
+ * Reset Hubspot styles
+ */
+
+ .row-fluid [class*="span"] {
+  min-height: 0 !important;
+  float: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.inputs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

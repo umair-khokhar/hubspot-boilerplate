@@ -1,0 +1,7 @@
+/**
+ * Font size & line heigth mixin
+ */
+@mixin font-size($font-size, $line-height-increment) {
+  font-size: rem-calc($font-size);
+  line-height: rem-calc($font-size + $line-height-increment);
+}

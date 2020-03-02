@@ -1,0 +1,7 @@
+{% macro render(id, style, additionalClass) %}
+  {% set aClass = additionalClass ? additionalClass : '' %}
+
+  <div class="c-hubspot-cta-button c-hubspot-cta-button--{{style}} {{aClass}}">
+    {{ cta(id) }} 
+  </div>
+{% endmacro %}

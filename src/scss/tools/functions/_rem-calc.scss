@@ -1,0 +1,9 @@
+/**
+ * Return a value in rem
+ *
+ */
+
+@function rem-calc($px-value, $rem-base: 16) {
+  $value: $px-value / $rem-base;
+  @return $value * 1rem;
+}

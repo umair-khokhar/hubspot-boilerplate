@@ -1,0 +1,14 @@
+@mixin button($color, $hover) {
+  color: $white;
+  fill: $white;
+  background-color: $color;
+  border-color: $color;
+
+  &:hover,
+  &:active {
+    color: $white;
+    fill: $white;
+    background-color: $hover;
+    border-color: $hover;
+  }
+}

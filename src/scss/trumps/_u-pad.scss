@@ -1,0 +1,99 @@
+.u-pad {
+  /**
+  * Padding xxxlarge
+  */
+  &--xxxxl {
+    @include padding-top(8.5rem, .5rem);
+    @include padding-bottom(8.5rem, .5rem);
+  }
+  &--top-xxxxl {
+    @include padding-top(8.5rem, .5rem);
+  }
+  &--bot-xxxxl {
+    @include padding-bottom(8.5rem, .5rem);
+  }
+
+  /**
+  * Padding xxxlarge
+  */
+  &--xxxl {
+    @include padding-top(6.5rem, .5rem);
+    @include padding-bottom(6.5rem, .5rem);
+  }
+  &--top-xxxl {
+    @include padding-top(6.5rem, .5rem);
+  }
+  &--bot-xxxl {
+    @include padding-bottom(6.5rem, .5rem);
+  }
+
+  /**
+  * Padding xxlarge
+  */
+  &--xxl {
+    @include padding-top(5.5rem, .5rem);
+    @include padding-bottom(5.5rem, .5rem);
+  }
+  &--top-xxl {
+    @include padding-top(5.5rem, .5rem);
+  }
+  &--bot-xxl {
+    @include padding-bottom(5.5rem, .5rem);
+  }
+
+  /**
+  * Padding xlarge
+  */
+  &--xl {
+    @include padding-top(3.5rem, .5rem);
+    @include padding-bottom(3.5rem, .5rem);
+  }
+  &--top-xl {
+    @include padding-top(3.5rem, .5rem);
+  }
+  &--bot-xl {
+    @include padding-bottom(3.5rem, .5rem);
+  }
+
+  /**
+  * Padding large
+  */
+  &--l {
+    @include padding-top(2rem, .5rem);
+    @include padding-bottom(2rem, .5rem);
+  }
+  &--top-l {
+    @include padding-top(2rem, .5rem);
+  }
+  &--bot-l {
+    @include padding-bottom(2rem, .5rem);
+  }
+
+  /**
+   * Padding medium
+   */
+  &--m {
+    @include padding-top(1rem, .25rem);
+    @include padding-bottom(1rem, .25rem);
+  }
+  &--top-m {
+    @include padding-top(1rem, .25rem);
+  }
+  &--bot-m {
+    @include padding-bottom(1rem, .25rem);
+  }
+
+  /**
+   * Padding small
+   */
+  &--s {
+    @include padding-top(.5rem, .25rem);
+    @include padding-bottom(.5rem, .25rem);
+  }
+  &--top-s {
+    @include padding-top(.5rem, .25rem);
+  }
+  &--bot-s {
+    @include padding-bottom(.5rem, .25rem);
+  }
+}

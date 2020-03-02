@@ -1,0 +1,5 @@
+.u-hide-on-large-down {
+  @include breakpoint(large down) {
+    display: none;
+  }
+}

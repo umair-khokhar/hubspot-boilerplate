@@ -1,0 +1,56 @@
+{
+  "name" : "picture",
+  "label" : "Picture",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "desktop",
+      "label" : "Afbeelding: Desktop",
+      "help_text" : "Breedte minimaal 2500px",
+      "sortable" : false,
+      "required" : true,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "",
+        "alt" : null
+      }
+    },
+    {
+      "name" : "tablet",
+      "label" : "Afbeelding: Tablet",
+      "help_text" : "Breedte minimaal 2000",
+      "sortable" : false,
+      "required" : true,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "",
+        "alt" : null
+      }
+    },
+    {
+      "name" : "mobile",
+      "label" : "Afbeelding: Mobiel",
+      "help_text" : "Breedte minimaal 1500px",
+      "sortable" : false,
+      "required" : true,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "type" : "image",
+      "default" : {
+        "src" : "",
+        "alt" : null
+      }
+    }
+  ],
+  "type" : "group",
+  "default" : {}
+}

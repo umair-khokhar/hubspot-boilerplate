@@ -1,0 +1,9 @@
+/**
+ * Return a value in em
+ *
+ */
+
+@function em-calc($px-value, $rem-base: 16) {
+  $value: $px-value / $rem-base;
+  @return $value * 1em;
+}

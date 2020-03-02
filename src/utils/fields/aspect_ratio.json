@@ -1,0 +1,20 @@
+{
+  "name" : "aspect_ratio",
+  "label" : "Aspect ratio",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ 
+    [ "square", "vierkant - 1:1" ], 
+    [ "h_large", "liggend - 5:4" ], 
+    [ "h_medium", "liggend - 3:2" ], 
+    [ "h_small", "liggend - 16:9" ], 
+    [ "h_xsmall", "liggend (case) - 20:9" ], 
+    [ "v_large", "staand - 4:5" ], 
+    [ "v_medium", "staand - 2:3" ], 
+    [ "v_small", "staand - 9:16" ] 
+  ],
+  "type" : "choice",
+  "default" : "square"
+}

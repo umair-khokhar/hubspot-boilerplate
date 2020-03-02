@@ -1,0 +1,11 @@
+/**
+ * Return z-index based on layer
+ *
+ */
+
+@function z($layer) {
+  @if not map-has-key($z-indexes, $layer) {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+  @return map-get($z-indexes, $layer);
+}

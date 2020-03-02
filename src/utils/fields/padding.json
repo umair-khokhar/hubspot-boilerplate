@@ -1,0 +1,98 @@
+{
+  "name" : "padding",
+  "label" : "Padding",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "top",
+      "label" : "Top",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "none", "Geen" ], 
+        [ "s", "Klein" ], 
+        [ "m", "Middel" ], 
+        [ "l", "Groot" ], 
+        [ "xl", "Extra groot" ], 
+        [ "xxl", "Enorm" ], 
+        [ "xxxl", "Extra enorm" ], 
+        [ "xxxxl", "Maximaal" ] 
+      ],
+      "type" : "choice",
+      "default" : "none"
+    }, 
+    {
+      "name" : "bottom",
+      "label" : "Bottom",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "none", "Geen" ], 
+        [ "s", "Klein" ], 
+        [ "m", "Middel" ], 
+        [ "l", "Groot" ], 
+        [ "xl", "Extra groot" ], 
+        [ "xxl", "Enorm" ], 
+        [ "xxxl", "Extra enorm" ], 
+        [ "xxxxl", "Maximaal" ] 
+      ],
+      "type" : "choice",
+      "default" : "none"
+    },
+    {
+      "name" : "mobile_top",
+      "label" : "Mobiel: Top",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [
+        [ "desktop", "Desktop instellingen"],
+        [ "none", "Geen" ], 
+        [ "s", "Klein" ], 
+        [ "m", "Middel" ], 
+        [ "l", "Groot" ], 
+        [ "xl", "Extra groot" ], 
+        [ "xxl", "Enorm" ], 
+        [ "xxxl", "Extra enorm" ], 
+        [ "xxxxl", "Maximaal" ] 
+      ],
+      "type" : "choice",
+      "default" : "desktop"
+    },
+    {
+      "name" : "mobile_bottom",
+      "label" : "Mobiel: Bottom",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "desktop", "Desktop instellingen"],
+        [ "none", "Geen" ], 
+        [ "s", "Klein" ], 
+        [ "m", "Middel" ], 
+        [ "l", "Groot" ], 
+        [ "xl", "Extra groot" ], 
+        [ "xxl", "Enorm" ], 
+        [ "xxxl", "Extra enorm" ], 
+        [ "xxxxl", "Maximaal" ] 
+      ],
+      "type" : "choice",
+      "default" : "desktop"
+    }  
+  ],
+  "type" : "group",
+  "default" : {
+    "top" : "none",
+    "bottom" : "none",
+    "mobile_top" : "none",
+    "mobile_bottom" : "none"
+  }
+}

@@ -1,0 +1,19 @@
+@mixin padding-top ($small, $increment) {
+  padding-top: $small;
+  @include breakpoint(medium) {
+    padding-top: $small + $increment;
+  }
+  @include breakpoint(xlarge) {
+    padding-top: $small + ($increment * 2);
+  }
+}
+
+@mixin padding-bottom ($small, $increment) {
+  padding-bottom: $small;
+  @include breakpoint(medium) {
+    padding-bottom: $small + $increment;
+  }
+  @include breakpoint(xlarge) {
+    padding-bottom: $small + ($increment * 2);
+  }
+}

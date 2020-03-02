@@ -1,0 +1,11 @@
+{
+  "name" : "image",
+  "label" : "Afbeelding",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "responsive" : false,
+  "resizable" : false,
+  "type" : "image",
+  "default" : {}
+}

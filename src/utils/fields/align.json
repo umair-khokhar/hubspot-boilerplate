@@ -1,0 +1,44 @@
+{
+  "name" : "align",
+  "label" : "Uitlijning",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "desktop",
+      "label" : "Desktop",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "left", "Links" ], 
+        [ "center", "Gecentreerd" ], 
+        [ "right", "Rechts" ] 
+      ],
+      "type" : "choice",
+      "default" : "left"
+    }, 
+    {
+      "name" : "mobile",
+      "label" : "Mobile",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "left", "Links" ], 
+        [ "center", "Gecentreerd" ], 
+        [ "right", "Rechts" ] 
+      ],
+      "type" : "choice",
+      "default" : "left"
+    } 
+  ],
+  "type" : "group",
+  "default" : {
+    "desktop" : "left",
+    "mobile" : "left"
+  }
+}

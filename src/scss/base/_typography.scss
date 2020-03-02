@@ -1,0 +1,214 @@
+/**
+ * Typography
+ *
+ * @since 1.0.0
+ */
+
+/**
+ * HTML base
+ */
+html {
+  font-family: $primary-font-family;
+  font-size: 16px;
+  color: $primary-font-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-size: rem-calc(18);
+}
+
+/**
+ * Paragraph
+ */
+p,
+.p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/**
+ * Headings
+ */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $heading-font-family;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/**
+ * H1
+ */
+h1,
+.h1 {
+  font-size: rem-calc(35);
+  font-weight: 800;
+
+  @include breakpoint (medium) {
+    font-size: rem-calc(45);
+  }
+  @include breakpoint (large) {
+    font-size: rem-calc(55);
+  }
+}
+
+/**
+ * H2
+ */
+h2,
+.h2 {
+  font-size: rem-calc(35);
+  font-weight: 700;
+
+  @include breakpoint (medium) {
+    font-size: rem-calc(40);
+  }
+  @include breakpoint (large) {
+    font-size: rem-calc(45);
+  }
+}
+
+/**
+ * H3
+ */
+h3,
+.h3 {
+  font-size: rem-calc(28);
+  font-weight: 700;
+  line-height: 1.3;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(32);
+  }
+}
+
+/**
+ * H4
+ */
+h4,
+.h4 {
+  font-size: rem-calc(24);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/**
+ * H5
+ */
+h5,
+.h5 {
+  font-size: rem-calc(21);
+}
+
+/**
+ * H6
+ */
+h6,
+.h6 {
+  font-size: rem-calc(18);
+}
+
+/**
+ * Anchor
+ */
+a {
+  @include transition();
+  text-decoration: none;
+  cursor: pointer;
+  color: $primary-color;
+  fill: $primary-color;
+
+  &:hover {
+    color: darken($primary-color, 20%);
+    fill: darken($primary-color, 20%);
+  }
+
+  .c-icon {
+    fill: inherit;
+  }
+}
+
+/**
+ * Bold & strong
+ */
+b,
+strong {
+  font-weight: 700;
+  line-height: inherit;
+}
+
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/**
+ * Mark, Ins & Pre
+ */
+mark,
+ins {
+  background-color: lighten($primary-color, 80);
+  text-decoration: none;
+}
+
+code {
+  font-family: monospace;
+  font-size: 90%;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 90%;
+  background: lighten($gray, 20);
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+/**
+ * small & big
+ */
+
+small {
+  font-size: 75%;
+}
+
+big {
+  font-size: 125%;
+}
+
+/**
+ * Blockquote & Q
+ */
+blockquote {
+  margin: 1.5rem 0;
+  font-size: rem-calc(18);
+  font-style: italic;
+}
+
+q {
+  font-weight: bold;
+
+  &::before,
+  &::after {
+    content: '\0022';
+  }
+}
+
+/**
+ * HR
+ */
+hr {
+  background-color: $light-gray;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 1.5rem 0;
+}

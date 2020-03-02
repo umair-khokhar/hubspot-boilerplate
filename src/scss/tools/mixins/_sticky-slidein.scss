@@ -1,0 +1,19 @@
+/**
+ * Sticky Slide-in
+ *
+ * Handy for sticky headers
+ */
+
+ @mixin sticky-slidein($z) {
+  transition: transform .5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: z($z);
+  transform: translateY(-200%);
+
+  &.active {
+    transform: translateY(0);
+  }
+}

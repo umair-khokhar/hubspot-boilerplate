@@ -1,0 +1,14 @@
+{
+  "name" : "icon",
+  "label" : "Icon",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ 
+    [ "search", "Zoeken" ],
+    [ "close", "Kruisje" ] 
+  ],
+  "type" : "choice",
+  "default" : "search"
+}

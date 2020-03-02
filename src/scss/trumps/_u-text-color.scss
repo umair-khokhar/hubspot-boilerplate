@@ -1,0 +1,11 @@
+.u-text-color {
+  &--white {
+    color: $white;
+  }
+  &--gray {
+    color: $gray;
+  }
+  &--black {
+    color: $black;
+  }
+}

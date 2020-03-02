@@ -1,0 +1,114 @@
+{
+  "name" : "video",
+  "label" : "Video",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "full_mp4",
+      "label" : "Video (MP4)",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    },
+    {
+      "name" : "full_vtt",
+      "label" : "Optioneel: Nederlandse ondertiteling (vtt)",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    }, 
+    {
+      "name" : "background",
+      "label" : "Preview afbeelding",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "responsive" : false,
+      "resizable" : false,
+      "type" : "image",
+      "default" : {}
+    },
+    {
+      "name" : "ratio",
+      "label" : "Aspect ratio",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "default", "Standaard (16:9)" ], 
+        [ "wide", "Widescreen (22:9)" ]
+      ],
+      "type" : "choice",
+      "default" : "default"
+    },
+    {
+      "name" : "autoplay",
+      "label" : "Autoplay",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "true", "Aan" ], 
+        [ "false", "Uit" ]
+      ],
+      "type" : "choice",
+      "default" : "true"
+    },
+    {
+      "name" : "show_play",
+      "label" : "Play button tonen?",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "true", "Tonen" ], 
+        [ "false", "Verbergen" ]
+      ],
+      "type" : "choice",
+      "default" : "true"
+    },
+    {
+      "name" : "button_content",
+      "label" : "Optioneel: Tekst onder play button",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "placeholder": "Bekijk de video",
+      "default" : ""
+    },
+    {
+      "name" : "button_time",
+      "label" : "Optioneel: Lengte van de video",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "placeholder": "01:32",
+      "default" : ""
+    } 
+  ],
+  "type" : "group",
+  "default" : {}
+}

@@ -1,0 +1,5 @@
+.u-hide-on-medium-up {
+  @include breakpoint(medium) {
+    display: none;
+  }
+}

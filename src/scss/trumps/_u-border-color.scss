@@ -1,0 +1,11 @@
+.u-border-color {
+  &--white {
+    border-color: $white;
+  }
+  &--gray {
+    border-color: $gray;
+  }
+  &--black {
+    border-color: $black;
+  }
+}

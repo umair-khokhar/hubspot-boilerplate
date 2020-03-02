@@ -1,0 +1,30 @@
+/**
+ * Colors
+ *
+ * @since 1.0.0
+ */
+
+$black: #000;
+$white: #fff;
+
+$light-gray: #DDDDDD;
+$gray: #848484;
+$dark-gray: #2C2A2A;
+$almost-black: #212020;
+
+$error: #df840e;
+$success: #98bd78;
+
+$primary-color: #5587b6;
+$secondary-color: #e0bb40;
+$primary-font-color: $black;
+
+// forms
+$checkbox: $gray;
+$input-border: $light-gray;
+$input-background: $light-gray;
+$input-color: $primary-font-color;
+$input-disabled: $light-gray;
+$input-focus: $light-gray;
+$input-placeholder: $primary-font-color;
+$radio: $gray;

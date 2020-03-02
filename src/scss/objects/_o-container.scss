@@ -1,0 +1,40 @@
+/**
+ * Container object
+ *
+ * @since 1.0.0
+ */
+
+ .o-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  @include breakpoint(small only) {
+    padding: 0 1rem;
+  }
+  @include breakpoint(medium only) {
+    padding: 0 2rem;
+  }
+
+  @include breakpoint(large) {
+    width: 92.5%;
+    max-width: rem-calc(1400);
+  }
+
+  &--full-width-on-mobile {
+    @include breakpoint(small only) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &--full-width-on-medium-down {
+    @include breakpoint(small only) {
+      padding: 0;
+    }
+    @include breakpoint(medium only) {
+      padding: 0;
+    }
+  }
+
+}

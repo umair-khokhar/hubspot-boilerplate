@@ -1,0 +1,15 @@
+{% macro render(href, content, style, additionalClass, icon, target) %}
+  {% set targetBlank = (target == '_blank') ? 'target="_blank"' : '' %}
+  {% set aClass = additionalClass ? additionalClass : '' %}
+  {% set moveRight = (icon == 'arrow-right') ? 'c-button__icon--move-right' : '' %}
+
+  <a href="{{href}}" class="c-button c-button--{{style}} {{aClass}}" {{target}}>
+    {{content}}
+
+    {% if icon != '' %}
+      <svg class="c-icon c-button__icon {{moveRight}}">
+        <use href="#{{icon}}" xlink:href="#{{icon}}"></use>
+      </svg>
+    {% endif %}
+  </a>
+{% endmacro %}

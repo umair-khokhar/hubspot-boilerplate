@@ -1,0 +1,41 @@
+{
+  "name" : "title",
+  "label" : "Titel",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "content",
+      "label" : "Content",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : ""
+    }, 
+    {
+      "name" : "heading",
+      "label" : "Heading",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "h1", "h1" ], 
+        [ "h2", "h2" ], 
+        [ "h3", "h3" ] 
+      ],
+      "type" : "choice",
+      "default" : "h2"
+    } 
+  ],
+  "type" : "group",
+  "default" : {
+    "content" : "",
+    "heading" : "h2"
+  }
+}

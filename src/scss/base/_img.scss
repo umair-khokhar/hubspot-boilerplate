@@ -1,0 +1,17 @@
+/**
+ * Image
+ *
+ * @since 1.0.0
+ */
+
+img,
+picture {
+  transition: opacity .5s ease-in-out;
+  
+  &.lazy {
+    opacity: 0;
+  }
+  &.lazy.loaded {
+    opacity: 1;
+  }
+}

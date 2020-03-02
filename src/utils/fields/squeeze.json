@@ -1,0 +1,19 @@
+{
+  "name" : "squeeze",
+  "label" : "Breedte",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ 
+    [ "none", "Volledige breedte (1400px)" ],
+    [ "xs", "Extra Klein (600px)" ], 
+    [ "s", "Klein (750px)" ],
+    [ "m", "Middel (900px)" ], 
+    [ "l", "Groot (1036px)" ], 
+    [ "xl", "Extra groot (1136px)" ], 
+    [ "xxl", "Enorm (1236px)" ]
+  ],
+  "type" : "choice",
+  "default" : "none"
+}

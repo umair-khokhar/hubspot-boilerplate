@@ -1,0 +1,8 @@
+{% macro render(id, size, additionalClass) %}
+  {% set iconSize = size ? 'c-icon--'~size : '' %}
+  {% set aClass = additionalClass ? additionalClass : '' %}
+
+  <svg class="c-icon {{iconSize}} {{aClass}}">
+    <use href="#{{id}}" xlink:href="#{{id}}"></use>
+  </svg>
+{% endmacro %}

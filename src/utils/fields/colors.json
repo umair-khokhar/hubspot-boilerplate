@@ -1,0 +1,39 @@
+{
+  "name" : "colors",
+  "label" : "Colors",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "background",
+      "label" : "Background",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "white", "Wit" ],
+        [ "black", "Zwart" ]
+      ],
+      "type" : "choice",
+      "default" : "white"
+    }, 
+    {
+      "name" : "text",
+      "label" : "Text",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "black", "Zwart" ],
+        [ "white", "Wit" ]
+      ],
+      "type" : "choice",
+      "default" : "black"
+    } 
+  ],
+  "type" : "group",
+  "default" : {}
+}

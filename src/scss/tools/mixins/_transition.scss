@@ -1,0 +1,6 @@
+/**
+ * if used with no parameters, defaults to transition: all .3s ease-in-out
+ */
+@mixin transition($property:all, $duration:.3s, $method:ease-in-out) {
+  transition: $property $duration $method;
+}

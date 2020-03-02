@@ -1,0 +1,27 @@
+{
+  "name" : "bg_color",
+  "label" : "Achtergrondkleur",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "children" : [ 
+    {
+      "name" : "background",
+      "label" : "Background",
+      "sortable" : false,
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ 
+        [ "white", "Wit" ],
+        [ "black", "Zwart" ]
+      ],
+      "type" : "choice",
+      "default" : "white"
+    }
+  ],
+  "type" : "group",
+  "default" : {
+    "background" : "white"
+  }
+}

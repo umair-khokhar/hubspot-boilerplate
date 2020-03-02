@@ -1,0 +1,137 @@
+/**
+ * Form
+ *
+ * @since 1.0.0
+ */
+
+/*
+ * NOTE <input>: 
+ * Make min-height and line-height the same for cross-browser height;
+ * Firefox/Safari/Chrome needs MIN-height for <select>;
+ * Edge needs height;
+ */
+
+form {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    width: 100%;
+  }
+}
+
+fieldset {
+  display: block;
+  width: 100%;
+}
+
+legend {
+  padding: 0 1rem;
+  color: $gray;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='tel'],
+input[type='url'],
+input[type='search'],
+input[type='submit'],
+select,
+textarea {
+  @include transition(all);
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: $primary-font-family;
+  font-size: rem-calc(18);
+  font-weight: 400;
+  background-color: $input-background;
+  color: $input-color;
+  outline: 0;
+  border: 1px solid $input-border;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0 1rem;
+  min-height: 3rem; // see NOTE
+  line-height: 3rem; // see NOTE
+
+  @supports (-ms-ime-align:auto) { /* Edge */
+    height: 3rem; // see NOTE
+  }
+
+  &:focus {
+    border-color: $input-focus;
+    box-shadow: 0 0 .5px .5px rgba($input-focus, .5);
+  }
+
+  &:disabled {
+    background-color: $input-disabled;
+  }
+
+  &::placeholder {
+    color: $input-placeholder;
+    opacity: 1;
+  }
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+textarea {
+  display: block; //removes 4px whitespace
+  resize: vertical;
+  line-height: 1.2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: rem-calc(200);
+}
+
+select {
+  color: $input-placeholder;
+  appearance: none;
+  // background-image: url('https://www.bureaubright.nl/hubfs/bb_theme_images/chevron-down.svg');
+  background-position: calc(100% - 14px) center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+
+  &:disabled {
+    background-color: $input-disabled;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &::-ms-value {
+    background: none;
+    color: $input-placeholder;
+  }
+}
+
+input[type='search'] {
+  // background-image: url('https://www.bureaubright.nl/hubfs/bb_theme_images/search.svg');
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 2.5rem;
+
+  &::-webkit-search-decoration {
+    -webkit-appearance: none; //safari: remove left-padding
+  }
+}
+
+label {
+  display: block;
+  font-weight: 400;
+  color: $gray;
+  font-size: rem-calc(16);
+  margin-bottom: .5rem;
+}

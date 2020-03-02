@@ -1,0 +1,55 @@
+/**
+ * Button
+ *
+ * @since 1.0.0
+ */
+
+.c-button {
+  @include transition();
+  $root: &;
+  color: $white;
+  fill: $white;
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 0;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  line-height: 1;
+  font-size: rem-calc(18);
+  font-family: $primary-font-family;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 90px;
+  padding: 1.1rem 2rem .9rem 2rem;
+
+  @include breakpoint(medium) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  // Hover
+  &:hover {
+    #{$root}__icon--move-right {
+      transform: translateX(.25rem);
+    }
+  }
+
+  // Icon
+  &__icon {
+    @include transition(transform);
+    @include square(1.5rem);
+    margin-left: .75rem;
+
+    @include breakpoint(medium) {
+      margin-left: 1rem;
+    }
+  }
+
+  // Styles
+  &--primary {
+    @include button($primary-color, darken($primary-color, 10%) );
+  }
+
+}

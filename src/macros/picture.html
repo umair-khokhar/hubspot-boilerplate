@@ -1,0 +1,34 @@
+{% macro render(picture, additionalClass) %}
+  {% set aClass  = additionalClass ? additionalClass : '' %}
+  {% set desktop = picture.desktop.src ? picture.desktop : false %}
+  {% set tablet  = picture.tablet.src ? picture.tablet : desktop %}
+  {% set mobile  = picture.mobile.src ? picture.mobile : desktop %}
+
+  {% if desktop %}
+    <picture class="c-picture {{aClass}}">
+      <source 
+        media="(max-width: 767px)"
+        srcset="{{mobile.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=500 500w,
+                {{mobile.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=1000 1000w,
+                {{mobile.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=1500 1500w">
+      <source 
+        media="(max-width: 1023px)"
+        srcset="{{tablet.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=800 800w,
+                {{tablet.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=1000 1000w,
+                {{tablet.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=1500 1500w,
+                {{tablet.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=2000 2000w">
+      <source 
+        media="(min-width: 1024px)"
+        srcset="{{ desktop.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=1100 1100w,
+                {{ desktop.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=1500 1500w,
+                {{ desktop.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=2000 2000w,
+                {{ desktop.src|replace('/hubfs/' + hub_id, '/hub/' + hub_id + '/hubfs') }}?width=2500 2500w">
+      <img src="{{ desktop.src }}" 
+            alt="{{ desktop.alt }}" 
+            class="c-picture {{aClass}}"
+            width="{{ desktop.width }}" 
+            height="{{ desktop.height }}">
+    </picture>
+  {% endif %}
+
+{% endmacro %}

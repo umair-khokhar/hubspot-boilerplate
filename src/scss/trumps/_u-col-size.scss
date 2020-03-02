@@ -1,0 +1,332 @@
+/* scss-lint:disable SelectorFormat */
+/**
+ * Enabled sizes
+ */
+$include-1-2-up: true;
+$include-1-2-only: true;
+$include-1-3-up: true;
+$include-1-3-only: true;
+$include-2-3-up: true;
+$include-2-3-only: true;
+$include-1-4-up: true;
+$include-1-4-only: true;
+$include-3-4-up: true;
+$include-3-4-only: true;
+$include-1-5-up: true;
+$include-1-5-only: true;
+$include-2-5-up: true;
+$include-2-5-only: true;
+$include-3-5-up: true;
+$include-3-5-only: true;
+$include-4-5-up: true;
+$include-4-5-only: true;
+$include-1-6-up: true;
+$include-1-6-only: true;
+
+$margin: (
+  small: .25rem,
+  medium: .75rem,
+  large: 1rem,
+  xlarge: 1.25rem,
+  xmlarge: 1.25rem,
+  xxlarge: 1.25rem
+);
+
+$breakpoints-up: (
+  s: 'small',
+  m: 'medium',
+  l: 'large',
+  xl: 'xlarge',
+  xm: 'xmlarge',
+  xxl: 'xxlarge'
+);
+
+$breakpoints-only: (
+  s-o: 'small',
+  m-o: 'medium',
+  l-o: 'large',
+  xl-o: 'xlarge',
+  xm-o: 'xmlarge',
+  xxl-o: 'xxlarge'
+);
+
+// 1-1@s
+.u-1\/1\@s {
+  width: 100%;
+}
+
+@include breakpoint(small only) {
+  .u-1\/1\@s-o {
+    width: 100%;
+  }
+}
+
+/**
+ * 1-2
+ */
+@if $include-1-2-up {
+  .u-1\/2 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(50% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-1-2-only {
+  .u-1\/2 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(50% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 1-3
+ */
+@if $include-1-3-up {
+  .u-1\/3 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc((100% / 3) - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-1-3-only {
+  .u-1\/3 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc((100% / 3) - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 2-3
+ */
+@if $include-2-3-up {
+  .u-2\/3 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(((100% / 3) *2) - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-2-3-only {
+  .u-2\/3 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(((100% / 3) *2) - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 1-4
+ */
+@if $include-1-4-up {
+  .u-1\/4 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(25% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-1-4-only {
+  .u-1\/4 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(25% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 3-4
+ */
+@if $include-3-4-up {
+  .u-3\/4 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(75% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-3-4-only {
+  .u-3\/4 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(75% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 1-5
+ */
+@if $include-1-5-up {
+  .u-1\/5 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(20% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-1-5-only {
+  .u-1\/5 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(20% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 2-5
+ */
+@if $include-2-5-up {
+  .u-2\/5 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(40% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-2-5-only {
+  .u-2\/5 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(40% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 3-5
+ */
+@if $include-3-5-up {
+  .u-3\/5 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(60% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-3-5-only {
+  .u-3\/5 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(60% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 4-5
+ */
+@if $include-4-5-up {
+  .u-4\/5 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc(80% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-4-5-only {
+  .u-4\/5 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc(80% - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 1-6
+ */
+@if $include-1-6-up {
+  .u-1\/6 {
+    @each $key, $bp in $breakpoints-up {
+      &\@#{$key} {
+        @include breakpoint($bp) {
+          width: calc((100% / 6) - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}
+
+@if $include-1-6-only {
+  .u-1\/6 {
+    @each $key, $bp in $breakpoints-only {
+      &\@#{$key} {
+        @include breakpoint($bp only) {
+          width: calc((100% / 6) - #{map-get($margin, #{$bp})});
+        }
+      }
+    }
+  }
+}

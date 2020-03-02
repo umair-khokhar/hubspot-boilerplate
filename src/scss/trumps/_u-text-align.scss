@@ -1,0 +1,27 @@
+.u-text-align {
+  &--left-d {
+    text-align: left;
+  }
+  &--center-d {
+    text-align: center;
+  }
+  &--right-d {
+    text-align: right;
+  }
+  
+  &--left-m {
+    @include breakpoint(small only) {
+      text-align: left;
+    } 
+  }
+  &--center-m {
+    @include breakpoint(small only) {
+      text-align: center;
+    } 
+  }
+  &--right-m {
+    @include breakpoint(small only) {
+      text-align: right;
+    } 
+  }
+}

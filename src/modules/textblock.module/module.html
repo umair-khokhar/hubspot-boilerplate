@@ -1,0 +1,13 @@
+{% import 'public/macros/helpers.html' as helpers %}
+
+<div class="c-text-block {{ helpers.utils(module.colors, module.padding, module.align) }}">
+  <div class="o-container">
+    <div class="u-squeeze u-squeeze--{{module.squeeze}}">
+      
+      <div class="c-content">
+        {{module.content}}
+      </div>
+
+    </div>
+  </div>
+</div>

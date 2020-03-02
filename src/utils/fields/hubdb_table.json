@@ -1,0 +1,5 @@
+{
+  "name" : "table_id",
+  "label" : "Tabel",
+  "type" : "hubdbtable"
+}

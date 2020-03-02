@@ -1,0 +1,10 @@
+{
+  "name" : "content",
+  "label" : "Content",
+  "sortable" : false,
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "type" : "richtext",
+  "default" : null
+}

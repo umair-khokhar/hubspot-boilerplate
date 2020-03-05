@@ -27,7 +27,7 @@ This boilerplate is based on the [Hubspot Local Development Boilerplate](https:/
 
 ---
 
-This is a starter pack for developing WordPress projects. The project structure is:
+This is a starter pack for developing Hubspot projects. The project structure is:
 
 - `/src` folder for all your source files,
 - `/dist` folder that is synced with Hubspot.

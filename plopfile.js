@@ -1,6 +1,6 @@
 const config = require('./gulpconfig.js');
 
-module.exports = function(plop) {
+module.exports = function (plop) {
   // create your generators here
   plop.setGenerator('module', {
     description: 'Generate HubSpot module',
@@ -10,7 +10,7 @@ module.exports = function(plop) {
         name: 'project',
         message: 'What is your project name?',
         default: config.project,
-        validate: function(value) {
+        validate: function (value) {
           if (/.+/.test(value)) {
             return true;
           }
@@ -21,7 +21,7 @@ module.exports = function(plop) {
         type: 'input',
         name: 'name',
         message: 'What is your module name?',
-        validate: function(value) {
+        validate: function (value) {
           if (/.+/.test(value)) {
             return true;
           }
@@ -32,8 +32,14 @@ module.exports = function(plop) {
     actions: [
       {
         type: 'add',
-        path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/meta.json`,
-        templateFile: 'templates/module/meta.json',
+        path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/meta.local.json`,
+        templateFile: 'templates/module/meta.local.json',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/meta.global.json`,
+        templateFile: 'templates/module/meta.global.json',
         abortOnFail: true,
       },
       {
@@ -46,6 +52,24 @@ module.exports = function(plop) {
         type: 'add',
         path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/fields/fields.js`,
         templateFile: 'templates/module/fields/fields.js',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/fields.local.json`,
+        templateFile: 'templates/module/fields.local.json',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/fields.global.json`,
+        templateFile: 'templates/module/fields.global.json',
+        abortOnFail: true,
+      },
+      {
+        type: 'add',
+        path: `${config.dirs.modules}/{{project}}_{{dashCase name}}.module/fields.json`,
+        templateFile: 'templates/module/fields.json',
         abortOnFail: true,
       },
       {
